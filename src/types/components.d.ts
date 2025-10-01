@@ -13,3 +13,10 @@ export interface AccountMenuItem {
 export interface ParentElementProps {
   children: ReactNode
 }
+
+type SocialAuthButtonProvidersType = 'google' | 'linkedin' | 'github' | 'facebook'
+
+export interface SocialAuthButtonProps {
+  label: string
+  provider: SocialAuthButtonProvidersType
+}

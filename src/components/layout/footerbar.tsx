@@ -7,7 +7,7 @@ export function FooterBar() {
   return (
     <footer className="border-t border-neutral-900 px-4 py-2">
       <Link
-        href=""
+        href="/sign-in"
         className="flex items-center hover:bg-rose-500/10 font-semibold text-rose-400 rounded-md gap-2 p-2"
       >
         <HugeiconsIcon icon={Logout02Icon} />
