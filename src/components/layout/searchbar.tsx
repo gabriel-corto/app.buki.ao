@@ -9,7 +9,7 @@ export function SearchBar() {
       <input
         type="text"
         placeholder="Faça a sua pesquisa"
-        className="bg-neutral-950 border border-neutral-900 focus:border-amber-300 focus:border-2 duration-200 focus:outline-0 p-3 text-14 rounded-lg pl-10 w-96"
+        className="bg-neutral-950 border border-neutral-800 focus:border-brand duration-200 focus:outline-0 p-3 text-14 rounded-lg pl-10 w-96"
       />
     </form>
   )

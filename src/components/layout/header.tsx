@@ -5,7 +5,7 @@ import { HeaderButton } from '../shared/buttons/header-button'
 
 export function Header() {
   return (
-    <header className="bg-neutral-900/40 flex items-center justify-between py-4 px-16 h-22 min-w-full border-b border-b-neutral-900">
+    <header className="bg-neutral-900/80 flex items-center justify-between py-4 px-16 h-22 min-w-full border-b border-b-neutral-800">
       <div className="flex items-center gap-4">
         <HeaderButton icon={ArrowLeft01Icon} />
         <HeaderButton icon={ArrowRight01Icon} />

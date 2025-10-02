@@ -1,21 +1,9 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Badge } from '@/components/ui/badge'
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select'
-import {
-  Books01Icon,
-  FilterIcon,
-  Location01Icon,
-  MapsLocation01Icon,
-} from '@hugeicons/core-free-icons'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/components/ui/card'
+
+import { ArrowRight02Icon, Calendar02Icon } from '@hugeicons/core-free-icons'
 import { HugeiconsIcon } from '@hugeicons/react'
-import { Filter } from 'lucide-react'
 
 export default function HomePage() {
   return (
@@ -26,32 +14,43 @@ export default function HomePage() {
           <strong className="text-2xl font-medium">Gabriel Francisco</strong>
         </div>
 
-        <div className="mt-3 w-md">
-          <Select>
-            <SelectTrigger>
-              <SelectValue placeholder="Gabriel" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="Gabriel">Gabriel</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
+        <div className="mt-3 w-md"></div>
 
         <div className="flex flex-col gap-8 mt-10">
-          <Card className="bg-neutral-900/50 space-y-4 w-[34rem] min-h-72 text-neutral-100 border border-neutral-800">
-            <CardHeader className="flex items-center justify-between">
-              <CardTitle className="text-2xl text-neutral-200 font-normal"></CardTitle>
+          <Card className="bg-neutral-900 space-y-4 w-[34rem] min-h-72 text-neutral-100 border border-neutral-800 rounded-2xl shadow-md hover:shadow-lg transition">
+            <CardHeader className="flex items-center gap-4">
+              <Avatar className="bg-neutral-950 w-20 h-20 border border-neutral-900 cursor-pointer">
+                <AvatarImage src="/profy.png" />
+                <AvatarFallback className="bg-neutral-950 font-bold">GF</AvatarFallback>
+              </Avatar>
+              <div className="flex flex-col">
+                <CardTitle className="text-xl text-neutral-200 font-semibold">João Silva</CardTitle>
+                <p className="text-sm text-neutral-400">Matemática • Ensino Secundário</p>
+              </div>
             </CardHeader>
 
-            <CardContent className="text-xl font-bold"></CardContent>
-          </Card>
+            <CardContent className="flex justify-between flex-col">
+              <div className="flex flex-col space-y-2">
+                <p className="text-lg font-bold text-neutral-100">5.000 kz / hora</p>
+                <div className="flex items-center gap-1 text-yellow-400">
+                  ★★★★☆ <span className="text-neutral-400 text-sm">(24 avaliações)</span>
+                </div>
+              </div>
+              <p className="text-sm text-neutral-400">
+                Professor com 5 anos de experiência, especializado em preparação para exames.
+              </p>
+            </CardContent>
 
-          <Card className="bg-neutral-900/50 space-y-4 w-[34rem] min-h-72 text-neutral-100 border border-neutral-800">
-            <CardHeader className="flex items-center justify-between">
-              <CardTitle className="text-2xl text-neutral-200 font-normal"></CardTitle>
-            </CardHeader>
+            <CardFooter className="justify-end gap-x-4 flex">
+              <button className="px-4 py-2 rounded-xl bg-amber-500 flex items-center gap-2 hover:bg-amber-500 cursor-pointer text-white font-medium transition">
+                <HugeiconsIcon icon={Calendar02Icon} /> Marcar aula
+              </button>
 
-            <CardContent className="text-xl font-bold"></CardContent>
+              <button className="px-4 py-2 flex items-center font-semibold rounded-xl bg-neutral-700 hover:bg-neutral-500 cursor-pointer text-white transition">
+                <HugeiconsIcon icon={ArrowRight02Icon} />
+                Ver Perfil
+              </button>
+            </CardFooter>
           </Card>
         </div>
       </div>
