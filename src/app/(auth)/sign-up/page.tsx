@@ -1,18 +1,13 @@
-import {
-  ArrowRight02Icon,
-  LockKeyIcon,
-  Login01Icon,
-  Mail01Icon,
-  User02Icon,
-} from '@hugeicons/core-free-icons'
+import { ArrowRight02Icon, LockKeyIcon, Mail01Icon, User03Icon } from '@hugeicons/core-free-icons'
 
 import { FormInput } from '@/components/shared/inputs/form-input'
 import { FormButton } from '@/components/shared/buttons/form-button'
 
-import { AuthFormHeader } from '@/components/shared/base/AuthFormHeader'
-import { SocialAuthButton } from '@/components/shared/buttons/social-auth-button'
-import { AuthFormFooter } from '@/components/shared/base/AuthFormFooter'
 import { FormGroup } from '@/components/shared/base/FormGroup'
+import { AuthFormHeader } from '@/components/shared/base/AuthFormHeader'
+
+import { AuthFormFooter } from '@/components/shared/base/AuthFormFooter'
+import { SocialAuthButton } from '@/components/shared/buttons/social-auth-button'
 
 export default function SignUpPage() {
   return (
@@ -21,9 +16,9 @@ export default function SignUpPage() {
 
       <form action="" className="space-y-6 min-w-96 mt-4">
         <FormGroup>
-          <FormInput icon={User02Icon} />
-          <FormInput icon={Mail01Icon} />
-          <FormInput icon={LockKeyIcon} />
+          <FormInput icon={User03Icon} placeholder="Digite o seu nome" />
+          <FormInput icon={Mail01Icon} placeholder="Seu e-mail" />
+          <FormInput icon={LockKeyIcon} placeholder="Digite uma senha de 6 caracateres" />
 
           <FormButton icon={ArrowRight02Icon} label="Cadastrar-me" />
         </FormGroup>

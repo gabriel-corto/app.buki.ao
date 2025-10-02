@@ -15,8 +15,8 @@ export default function SignInPage() {
 
       <form action="" className="space-y-6 min-w-96 mt-4">
         <FormGroup>
-          <FormInput icon={Mail01Icon} />
-          <FormInput icon={LockKeyIcon} />
+          <FormInput icon={Mail01Icon} placeholder="Digite o seu e-mail" type="email" />
+          <FormInput icon={LockKeyIcon} placeholder="Digite a sua palavra passe" type="password" />
 
           <FormButton icon={Login01Icon} label="Fazer Login" />
         </FormGroup>

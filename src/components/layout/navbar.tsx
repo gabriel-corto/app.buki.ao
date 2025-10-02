@@ -8,7 +8,7 @@ export function Navbar() {
     <nav className="flex flex-col gap-y-6">
       <Link href="" className="flex items-center hover:bg-neutral-900 rounded-md gap-2 p-2">
         <HugeiconsIcon icon={Home01Icon} />
-        <span>Início</span>
+        <span>Explorar</span>
       </Link>
 
       <Link href="" className="flex items-center hover:bg-neutral-900 rounded-md gap-2 p-2">

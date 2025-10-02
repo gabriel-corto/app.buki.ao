@@ -125,3 +125,9 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #171717 inset;
+  -webkit-text-fill-color: #e5e5e5;
+  transition: background-color 9999s ease-in-out 0s;
+}

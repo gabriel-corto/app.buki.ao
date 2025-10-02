@@ -1,5 +1,5 @@
 import { IconSvgObject } from '@hugeicons/core-free-icons'
-import { ReactComponentElement, ReactNode } from 'react'
+import { ComponentProps, ReactComponentElement, ReactNode } from 'react'
 
 export interface HeaderButtonProps {
   icon: IconSvgObject
@@ -19,4 +19,9 @@ type SocialAuthButtonProvidersType = 'google' | 'linkedin' | 'github' | 'faceboo
 export interface SocialAuthButtonProps {
   label: string
   provider: SocialAuthButtonProvidersType
+}
+
+type FormInputpProps = ComponentProps<'input'> & {
+  icon?: IconSvgElement
+  className?: string
 }

@@ -1,17 +1,18 @@
-import { HugeiconsIcon, IconSvgElement } from '@hugeicons/react'
+import { cn } from '@/lib/utils'
+import { FormInputpProps } from '@/types/components'
+import { HugeiconsIcon } from '@hugeicons/react'
 
-interface FormInputpProps {
-  icon?: IconSvgElement
-}
-export function FormInput({ icon }: FormInputpProps) {
+export function FormInput({ icon, className, ...props }: FormInputpProps) {
   return (
     <div className="relative">
       {icon && <HugeiconsIcon icon={icon} className="absolute top-3 left-2.5 text-neutral-600" />}
 
       <input
-        type="text"
-        placeholder="Digite o seu e-mail"
-        className="w-full pl-12 p-3 rounded-md bg-neutral-900 focus:border-amber-400 border border-neutral-800 focus:outline-0"
+        className={cn(
+          'w-full pl-10 pt-3 pb-3 pr-3 rounded-xl placeholder:text-neutral-500 bg-neutral-900 focus:border-amber-400 border border-neutral-800 focus:outline-0',
+          className
+        )}
+        {...props}
       />
     </div>
   )
