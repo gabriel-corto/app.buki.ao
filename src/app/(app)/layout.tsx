@@ -3,9 +3,10 @@ import { Montserrat } from 'next/font/google'
 
 import { ParentElementProps } from '@/types/components'
 
-import { Sidebar } from '@/components/layout/sidebar'
-import { Header } from '@/components/layout/header'
-import { PageContainer } from '@/components/layout/page-container'
+import { Sidebar } from '@/components/general/sidebar'
+import { Header } from '@/components/general/header'
+
+import NextTopLoader from 'nextjs-toploader'
 
 import '@/app/globals.css'
 
@@ -22,13 +23,14 @@ export default function AppLayout({ children }: ParentElementProps) {
   return (
     <html lang="pt">
       <body className={`${montserratSans.variable} antialiased bg-neutral-950 text-neutral-100`}>
-        <main className="w-screen h-screen flex">
+        <NextTopLoader color="#10B981" />
+
+        <main className="h-screen flex">
           <Sidebar />
 
-          <div className="flex-1 flex flex-col gap-10">
+          <div className="flex-1 ml-[200px] flex flex-col gap-10">
             <Header />
-
-            <PageContainer>{children}</PageContainer>
+            {children}
           </div>
         </main>
       </body>

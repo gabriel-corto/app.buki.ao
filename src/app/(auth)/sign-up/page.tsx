@@ -3,10 +3,10 @@ import { ArrowRight02Icon, LockKeyIcon, Mail01Icon, User03Icon } from '@hugeicon
 import { FormInput } from '@/components/shared/inputs/form-input'
 import { FormButton } from '@/components/shared/buttons/form-button'
 
-import { FormGroup } from '@/components/shared/base/FormGroup'
-import { AuthFormHeader } from '@/components/shared/base/AuthFormHeader'
+import { FormGroup } from '@/components/shared/base/form/form-group'
+import { AuthFormHeader } from '@/components/shared/base/form/auth-form-header'
 
-import { AuthFormFooter } from '@/components/shared/base/AuthFormFooter'
+import { AuthFormFooter } from '@/components/shared/base/form/auth-form-footer'
 import { SocialAuthButton } from '@/components/shared/buttons/social-auth-button'
 
 export default function SignUpPage() {

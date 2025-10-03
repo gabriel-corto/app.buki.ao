@@ -1,7 +1,9 @@
-import { IconSvgObject } from '@hugeicons/core-free-icons'
 import { ComponentProps, ReactComponentElement, ReactNode } from 'react'
 
-export interface HeaderButtonProps {
+import type { IconSvgElement } from '@hugeicons/react'
+import { IconSvgObject } from '@hugeicons/core-free-icons'
+
+export interface HeaderButtonProps extends ComponentProps<'button'> {
   icon: IconSvgObject
 }
 
@@ -10,18 +12,27 @@ export interface AccountMenuItem {
   label: string
 }
 
-export interface ParentElementProps {
+export interface SocialAuthButtonProps extends ComponentProps<'button'> {
+  label: string
+  provider: 'google' | 'linkedin'
+}
+
+export interface InputProps extends ComponentProps<'input'> {
+  icon?: IconSvgElement
+  className?: string
+}
+
+export interface ParentElementProps extends ComponentProps<'div'> {
   children: ReactNode
 }
 
-type SocialAuthButtonProvidersType = 'google' | 'linkedin' | 'github' | 'facebook'
-
-export interface SocialAuthButtonProps {
+export interface FilterGroupHeaderProps extends ComponentProps<'div'> {
   label: string
-  provider: SocialAuthButtonProvidersType
+  icon?: IconSvgElement
 }
 
-type FormInputpProps = ComponentProps<'input'> & {
+export interface WidgetCardProps extends ComponentProps<'div'> {
   icon?: IconSvgElement
-  className?: string
+  children: ReactNode
+  label: string
 }

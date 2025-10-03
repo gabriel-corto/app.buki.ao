@@ -3,10 +3,10 @@ import { LockKeyIcon, Login01Icon, Mail01Icon } from '@hugeicons/core-free-icons
 import { FormInput } from '@/components/shared/inputs/form-input'
 import { FormButton } from '@/components/shared/buttons/form-button'
 
-import { AuthFormHeader } from '@/components/shared/base/AuthFormHeader'
+import { AuthFormHeader } from '@/components/shared/base/form/auth-form-header'
 import { SocialAuthButton } from '@/components/shared/buttons/social-auth-button'
-import { AuthFormFooter } from '@/components/shared/base/AuthFormFooter'
-import { FormGroup } from '@/components/shared/base/FormGroup'
+import { AuthFormFooter } from '@/components/shared/base/form/auth-form-footer'
+import { FormGroup } from '@/components/shared/base/form/form-group'
 
 export default function SignInPage() {
   return (

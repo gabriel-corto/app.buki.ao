@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils'
 import { InputProps } from '@/types/components'
 import { HugeiconsIcon } from '@hugeicons/react'
 
-export function FormInput({ icon, className, ...props }: InputProps) {
+export function Input({ icon, className, ...props }: InputProps) {
   return (
     <div className="relative">
       {icon && <HugeiconsIcon icon={icon} className="absolute top-3 left-2.5 text-neutral-600" />}
