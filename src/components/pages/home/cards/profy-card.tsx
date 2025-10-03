@@ -2,6 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Calendar02Icon, ArrowRight02Icon } from '@hugeicons/core-free-icons'
 import { HugeiconsIcon } from '@hugeicons/react'
+import { ProfyCardACtionsButton } from '../buttons/profy-card-acctions-button'
 
 export function ProfyCard() {
   return (
@@ -31,16 +32,7 @@ export function ProfyCard() {
         </p>
       </CardContent>
 
-      <CardFooter>
-        <button className="px-4 py-2 rounded-xl bg-emerald-600 flex items-center gap-2 hover:bg-emerald-500 cursor-pointer text-white font-medium transition">
-          <HugeiconsIcon icon={Calendar02Icon} /> Marcar aula
-        </button>
-
-        <button className="px-4 py-2 flex items-center font-semibold rounded-xl bg-neutral-700 hover:bg-neutral-500 cursor-pointer text-white transition">
-          <HugeiconsIcon icon={ArrowRight02Icon} />
-          Ver Perfil
-        </button>
-      </CardFooter>
+      <ProfyCardACtionsButton />
     </Card>
   )
 }

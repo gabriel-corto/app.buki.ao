@@ -7,7 +7,7 @@ import { HugeiconsIcon } from '@hugeicons/react'
 export default function FalakiPage() {
   return (
     <PageLayout>
-      <div className="flex items-start gap-10">
+      {/* <div className="flex items-start gap-10">
         <div className="flex flex-col gap-4  w-96">
           <div>
             <Input type="text" placeholder="Pesquisar" icon={Search01Icon} />
@@ -43,7 +43,8 @@ export default function FalakiPage() {
           <div>conversa</div>
           <div>caixa de mensagem</div>
         </div>
-      </div>
+      </div> */}
+      <p>Falaki</p>
     </PageLayout>
   )
 }
