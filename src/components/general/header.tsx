@@ -8,7 +8,7 @@ import { Notification01Icon } from '@hugeicons/core-free-icons'
 
 export function Header() {
   return (
-    <header className="bg-neutral-900 z-50 sticky top-0 flex left-[200px] items-center justify-between py-4 px-24 h-22 w-full border-b border-b-neutral-800">
+    <header className="bg-neutral-900/80 z-50 sticky backdrop-blur-sm top-0 flex left-[200px] items-center justify-between py-4 px-24 h-22 w-full border-b border-b-neutral-800">
       <ArrowsNavigation />
       <SearchBar />
 

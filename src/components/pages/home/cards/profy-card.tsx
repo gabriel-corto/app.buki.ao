@@ -2,7 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Calendar02Icon, ArrowRight02Icon } from '@hugeicons/core-free-icons'
 import { HugeiconsIcon } from '@hugeicons/react'
-import { ProfyCardACtionsButton } from '../buttons/profy-card-acctions-button'
+import { ProfyCardActionsButton } from '../buttons/profy-card-acctions-button'
 
 export function ProfyCard() {
   return (
@@ -32,7 +32,7 @@ export function ProfyCard() {
         </p>
       </CardContent>
 
-      <ProfyCardACtionsButton />
+      <ProfyCardActionsButton />
     </Card>
   )
 }
